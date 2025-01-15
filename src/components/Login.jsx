@@ -18,9 +18,7 @@ const Login = () => {
     e.preventDefault();
     dispatch(loginStart());
 
-    // Simulate API call with some basic validation
     try {
-      // In a real app, this would be an API call
       await new Promise(resolve => setTimeout(resolve, 1000));
 
       if (credentials.email && credentials.password.length >= 6) {
